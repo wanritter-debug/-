@@ -47,17 +47,19 @@
             width: 150px;
             height: 150px;
             margin: 0 auto 30px;
-            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            background: white;
             border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
             box-shadow: 0 10px 30px rgba(17, 153, 142, 0.3);
+            padding: 15px;
         }
 
-        .logo svg {
-            width: 100px;
-            height: 100px;
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
 
         .icon {
@@ -193,6 +195,12 @@
                 padding: 30px 20px;
             }
 
+            .logo {
+                width: 120px;
+                height: 120px;
+                margin-bottom: 25px;
+            }
+
             h1 {
                 font-size: 26px;
             }
@@ -214,11 +222,13 @@
 <body>
     <div class="container">
         <div class="logo">
-            <img src="https://raw.githubusercontent.com/wanritter-debug/al-hijrah-assets/main/logo.png" alt="Al-Hijrah Logo" style="width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+            <img src="https://raw.githubusercontent.com/wanritter-debug/al-hijrah-assets/main/logo.png" alt="Al-Hijrah Logo">
         </div>
         <div class="icon">🔧</div>
         <h1>ระบบไม่พร้อมใช้งานชั่วคราว</h1>
         <p class="subtitle">ขณะนี้ระบบกำลังอยู่ในระหว่างการปรับปรุงและบำรุงรักษา<br>เพื่อประสบการณ์ที่ดีขึ้นสำหรับท่าน</p>
+        
+        <p class="apology">ขออภัยในความไม่สะดวก</p>
     </div>
 
     <script>
